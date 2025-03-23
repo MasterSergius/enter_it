@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.filter_row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Increased margin for better spacing */
+}
+
+.filter_input {
+    margin-left: 10px; /* Increased margin for better spacing */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+h3 {
+    color: #FF0000;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+#filter_button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Example button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Added margin for spacing */
+}
+
+#results {
+    margin-top: 20px;
+    padding: 10px;
+    width: 80%; /* Limit width for better readability */
+    max-width: 600px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #696969; /* dark gray for headers */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #d3d3d3; /* light gray for even rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* almost white for odd rows */
+}
