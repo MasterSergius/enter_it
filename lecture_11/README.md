@@ -34,10 +34,14 @@ python3 -m pip install -r test_requirements.txt
 Run scripts
 -----------
 
+```sh
 python3 quadratic.py 1 -5 6
 python3 nbu_xchange.py USD UAH 1000
+```
 
 Run tests
 ---------
 
+```sh
 pytest .
+```
