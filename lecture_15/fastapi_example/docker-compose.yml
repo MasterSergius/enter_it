@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  app:
+    build: .  # build from Dockerfile in current directory
+    ports:
+      - "8000:8000"
+    environment:
+      DB__POSTGRES_HOST: db
+      DB__POSTGRES_DB: user_database
+      DB__POSTGRES_USER: myuser
+      DB__POSTGRES_PASSWORD: mypassword
+      DB__POSTGRES_PORT: 5432
+    depends_on:
+      - db
+    restart: on-failure
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: user_database
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:

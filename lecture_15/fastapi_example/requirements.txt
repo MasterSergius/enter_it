@@ -1,0 +1,4 @@
+fastapi
+psycopg
+pydantic-settings
+uvicorn
