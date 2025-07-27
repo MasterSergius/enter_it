@@ -1,0 +1,7 @@
+{
+    "main_message": "Welcome to the Language Switcher App!",
+    "description": "This is a simple demonstration of internationalization in a NiceGUI application. You can switch the display language using the options below.",
+    "language_switcher_label": "Select Language:",
+    "lang_en_button": "EN",
+    "lang_ua_button": "UA"
+}
